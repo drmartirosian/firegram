@@ -1,4 +1,11 @@
- // Your web app's Firebase configuration
+//IMPORT FIREBASE
+import * as firebase from 'firebase/app';
+//TO STORE IMAGES
+import 'firebase/storage';
+//DATABASE
+import 'firebase/firestore';
+
+// Your web app's Firebase configuration
  var firebaseConfig = {
     apiKey: "AIzaSyDPN3N5Esg7GgVGRhpiL3vX5jiKwlQCt6c",
     authDomain: "firegram-eeb4c.firebaseapp.com",
@@ -10,3 +17,10 @@
   };
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
+
+  //INITIALIZE STORAGE/FIRESTORE SERVICES
+  const projectStorage = firebase.storage();
+  const projectFirestore = firebase.firestore();
+
+  //EXPORT FOR FUTURE USE
+  export { projectStorage, projectFirestore };
