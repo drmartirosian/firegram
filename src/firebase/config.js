@@ -1,5 +1,5 @@
 //IMPORT FIREBASE
-import * as firebase from 'firebase/app';
+import firebase from 'firebase/app'
 //TO STORE IMAGES
 import 'firebase/storage';
 //DATABASE
