@@ -21,6 +21,7 @@ import 'firebase/firestore';
   //INITIALIZE STORAGE/FIRESTORE SERVICES
   const projectStorage = firebase.storage();
   const projectFirestore = firebase.firestore();
+  const timestamp = firebase.firestore.FieldValue.serverTimestamp;
 
   //EXPORT FOR FUTURE USE
-  export { projectStorage, projectFirestore };
+  export { projectStorage, projectFirestore, timestamp };
